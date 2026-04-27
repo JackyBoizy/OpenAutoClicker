@@ -1,18 +1,35 @@
 {
-  "name": "OpenAutoClicker",
+  "name": "openautoclicker",
   "version": "0.1.1",
   "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "main": "node main.js",
-    "start": "electron ."
-  },
-  "keywords": [],
+  "description": "Open Source Auto Clicker for all your Autoclicking needs!",
   "author": "",
   "license": "ISC",
-  "description": "Open Source Auto Clicker for all your Autoclicking needs!",
+  "keywords": [],
+
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+
+  "build": {
+    "appId": "com.openautoclicker.app",
+    "productName": "OpenAutoClicker",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/img/sinistcha.ico"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+
   "dependencies": {
-    "electron": "^41.3.0",
     "robotjs": "^0.7.0"
+  },
+
+  "devDependencies": {
+    "electron": "^41.3.0",
+    "electron-builder": "^24.13.3"
   }
 }
