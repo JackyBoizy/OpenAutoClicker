@@ -1,0 +1,18 @@
+{
+  "name": "OpenAutoClicker",
+  "version": "0.1.1",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "main": "node main.js",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Open Source Auto Clicker for all your Autoclicking needs!",
+  "dependencies": {
+    "electron": "^41.3.0",
+    "robotjs": "^0.7.0"
+  }
+}
